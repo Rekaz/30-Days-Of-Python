@@ -58,8 +58,10 @@ print_list(1,2,3,4)
 def reverse_list (lst):
     i = len (lst)
     rev = []
-    while i >=0:
-        rev.append(lst[i])
+    while i >0:
+        rev.append(lst[i-1])
+        i-=1
+    return (rev)
 print(reverse_list([1, 2, 3, 4, 5]))
 print(reverse_list(["A", "B", "C"]))
 
@@ -149,8 +151,12 @@ def is_same_dataType (lst):
     while i < len(lst):
         if type(lst[i-1]) != type(lst[i]):
             return ("not same")
+        else:
+            i+=1
+            continue
     return ("same")
 print (is_same_dataType([1,2,3,'c']))
+print (is_same_dataType([1,2,3]))
 
         
         
