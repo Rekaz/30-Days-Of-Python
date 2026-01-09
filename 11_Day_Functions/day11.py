@@ -118,3 +118,41 @@ def is_empty(param):
     else:
         return ("not empty")
 print (is_empty(1))
+
+def is_prime(num):
+    if num <= 1:
+        return ("not prime")
+    if num <=3:
+        return ("prime")
+    if num %2 == 0 or num % 3 == 0:
+        return ("not prime")
+    i = 5
+    while i * i <= num:
+        if num % i == 0 or num % (i+2) == 0:
+            return ("not prime")
+        i+=6
+    return ("prime")
+print (is_prime(23))
+
+def is_unique(lst):
+    st = set (lst)
+    if len(lst) == len (st):
+        return ("unique")
+    else:
+        return ("not unique")
+print (is_unique([1,2,3,3,4,54,6]))
+
+def is_same_dataType (lst):
+    if len(lst) == 1:
+        return ("same")
+    i = 1
+    while i < len(lst):
+        if type(lst[i-1]) != type(lst[i]):
+            return ("not same")
+    return ("same")
+print (is_same_dataType([1,2,3,'c']))
+
+        
+        
+          
+        
