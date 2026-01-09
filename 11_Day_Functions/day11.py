@@ -157,7 +157,7 @@ def is_same_dataType (lst):
     return ("same")
 print (is_same_dataType([1,2,3,'c']))
 print (is_same_dataType([1,2,3]))
-print ("Test")
+
 
         
         
