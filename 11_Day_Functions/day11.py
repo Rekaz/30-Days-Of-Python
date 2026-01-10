@@ -1,4 +1,6 @@
 import cmath
+import keyword
+
 def add_two_numbers(a,b):
     return (a+b)
 print (add_two_numbers(2,3))
@@ -158,7 +160,12 @@ def is_same_dataType (lst):
 print (is_same_dataType([1,2,3,'c']))
 print (is_same_dataType([1,2,3]))
 
-
+def is_valid_variable(name):
+    return name.isidentifier() and not keyword.iskeyword(name)
+print(is_valid_variable("my_var"))   
+print(is_valid_variable("1var"))     
+print(is_valid_variable("class"))    
+    
         
         
           
