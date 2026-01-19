@@ -48,3 +48,23 @@ print('Standard Deviation: ', data.std()) # 4.2
 print('Variance: ', data.var()) # 17.5
 print('Frequency Distribution: ', data.freq_dist())
 print(data.describe())
+
+class PersonAccount:
+    def __init__(self, firstname, lastname, incomes, expenses):
+        self.firstname = firstname
+        self.lastname = lastname
+        self.incomes = incomes
+        self.expenses = expenses
+    def total_income(self):
+        pass
+    def total_expense(self):
+        pass
+    def account_info(self):
+        pass
+    def add_income(self):
+        pass
+    def add_expense(self):
+        pass
+    def account_balance(self):
+        pass
+       
