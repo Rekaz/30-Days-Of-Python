@@ -5,3 +5,4 @@ source D:\python\virtenv\bin\activate
 pip freeze # to see packages installed in the virtual environment "virtenv"
 pip3 install flask
 pip freeze
+deactivate
