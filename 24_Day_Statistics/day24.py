@@ -209,3 +209,19 @@ print (np_horizontal)
 # vertical stacking
 np_vertical = np.vstack((np_1d_list1, np_1d_list2))
 print (np_vertical)
+
+# GENERATING RANDOM NUMBERS
+random_float = np.random.random() # single random float number between 0 and 1
+print (random_float)
+random_floats = np.random.random(5) # array of 5 random float numbers between 0 and 1
+# random_floats
+print (random_floats)
+random_int = np.random.randint(0, 10) # single random integer between 0 and 10
+print (random_int)
+random_ints = np.random.randint(0, 10, 5) # array of 5 random integers between 0 and 10
+print (random_ints)
+random_ints_2d_array = np.random.randint(0, 10, (3,3)) # 2d array of random integers between 0 and 10
+print (random_ints_2d_array)
+print (type(random_ints_2d_array))
+normal_array = np.random.normal(79,15,80) # 2d array of 80 random numbers with mean 79 and standard deviation 15
+print (normal_array)
